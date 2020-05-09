@@ -24,9 +24,9 @@ public class TodoHelperTest {
 	
 	@Before
 	public void setup() {
-		allTodos.add(new Todo(1,1,"todoTitle1",true));
-		allTodos.add(new Todo(2,2,"todoTitle2",false));	
-		result.add(new Todo(1,1,"todoTitle1",true));
+		allTodos.add(new Todo(1, 1, "todoTitle1", true));
+		allTodos.add(new Todo(2, 2, "todoTitle2", false));	
+		result.add(new Todo(1, 1, "todoTitle1", true));
 		when(todoHelper.getTodoByUserId(allTodos,1)).thenReturn(result);
 	}
 	
